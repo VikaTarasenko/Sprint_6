@@ -1,14 +1,10 @@
 package com.example;
-
-import com.example.Feline;
-import com.example.Lion;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class) //
@@ -34,7 +30,7 @@ public class LionTest {
         };
     }
     @Test
-    public void LionTest() throws Exception {
+    public void lionTest() throws Exception {
         Feline feline = new Feline();
         lion = new Lion(sex, feline);
         assertEquals(expectedResult, lion.hasMane);
