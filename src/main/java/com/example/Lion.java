@@ -16,7 +16,6 @@ public class Lion {
     Feline feline;
 
     public List<String> getFood() throws Exception {
-        Feline feline = new Feline();
         return feline.getFood("Хищник");
     }
 }
