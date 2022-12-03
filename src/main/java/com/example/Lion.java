@@ -4,7 +4,7 @@ import java.util.List;
 public class Lion {
    boolean hasMane;
     public Lion(String sex, Feline feline) throws Exception { // инъекция здесь
-        this.feline = this.feline;
+        this.feline = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
