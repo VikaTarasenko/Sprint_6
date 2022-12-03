@@ -5,7 +5,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
 
 @RunWith(Parameterized.class) //
 public class LionTest {
@@ -13,6 +17,7 @@ public class LionTest {
     private final boolean expectedResult;
    @Mock
    Lion lion;
+
     @Before
     public void setUp(){
         MockitoAnnotations.openMocks(this);
@@ -35,4 +40,5 @@ public class LionTest {
         lion = new Lion(sex, feline);
         assertEquals(expectedResult, lion.hasMane);
     }
+
 }
