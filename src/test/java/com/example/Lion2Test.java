@@ -18,6 +18,12 @@ Feline feline;
         assertEquals(false, lion.doesHaveMane());
 
     }
+    @Test
+    public void checkException(){
+        Exception actualException = assertThrows(Exception.class, () ->
+                new Lion("Собака", feline));
+        assertEquals("Используйте допустимые значения пола животного - самей или самка", actualException.getMessage());
+    }
 }
 
 
