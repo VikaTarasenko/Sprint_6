@@ -38,9 +38,9 @@ public class Lion2Test {
     }
     @Test
     public void getFood() throws Exception {
-        when(feline.eatMeat()).thenReturn(List.of("проверка1", "проверка2"));
+        when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         var lion = new Lion("Самка", feline);
-        assertEquals(List.of("проверка1", "проверка2"), lion.getFood());
+        assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
     }
 }
 
